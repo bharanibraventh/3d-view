@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PRODUCT 360 VIEW</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="360ImageRotate.min.js"></script>
+    <script>
+        $( document ).ready(function() {
+            $('.product').TreeSixtyImageRotate({
+                totalFrames: 36,
+                endFrame: 36,
+                currentFrame: 0,
+                extension: ".png",
+                imagesFolder: "images/prod1/",
+                smallWidth: 800,
+                smallHeight: 800,
+                largeWidth: 1200,
+                largeHeight: 1200,
+                imagePlaceholderClass: "images-placeholder"
+            }).initTreeSixty();
+            $('.product1').TreeSixtyImageRotate({
+                totalFrames: 36,
+                endFrame: 36,
+                currentFrame: 0,
+                extension: ".png",
+                imagesFolder: "images/prod2/",
+                smallWidth: 800,
+                smallHeight: 800,
+                largeWidth: 1200,
+                largeHeight: 1200,
+                imagePlaceholderClass: "images-placeholder"
+            }).initTreeSixty()
+        });
+    </script>
+<style>
+    .container { margin: 150px auto; max-width: 960px; }
+</style>
+</head>
+<body
+<div id="jquery-script-menu">
+<div class="jquery-script-center">
+<div class="jquery-script-ads"><script type="text/javascript">
+</script>
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+    <div class="container">
+<div class="threesixty-image-rotate product">
+</div>
+<div class="threesixty-image-rotate product1">
+</div>
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
